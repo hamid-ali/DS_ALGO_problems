@@ -1,0 +1,3 @@
+printDivisors( n );
+
+        cout<<endl;
