@@ -25,7 +25,7 @@ int perfectSum(int arr[], int n, int sum)
         {
             for(int j = 1 ; j < sum + 1 ; j++)
             {
-                if(arr[i - 1] <= j)
+                if(arr[i - 1] <= j) //not < sum as its very likey to do this mistake
                 {
                     dp[i][j] = (dp[i - 1][j - arr[i - 1]] % M + dp[i -1][j] % M ) % M;
                     

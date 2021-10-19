@@ -5,7 +5,7 @@ Given an integer array arr of size N, the task is to divide it into two sets S1 
 
 */
 
-bool isSubsetSum(int arr[] , int n , int sum , vector<vector<bool>> &dp)
+void isSubsetSum(int arr[] , int n , int sum , vector<vector<bool>> &dp)
     {
         for(int i = 0 ; i < sum + 1 ; i++)
             dp[0][i] = false ;
